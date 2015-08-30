@@ -44,7 +44,6 @@ class amitools (
   }
 
   $bindir = "${installdir}/current/bin"
-  $targetdir = '/usr/local/bin'
   exec { 'update-amitools-links':
     command => "bash -c 'for bin in * ; do ln -sf ${bindir}/\$bin ${targetdir}/\$bin ; done'",
     cwd     => $bindir,
