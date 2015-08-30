@@ -22,6 +22,24 @@ class amitools (
     }
   }
 
+  if ! defined(Package['kpartx']) {
+    package { 'kpartx':
+      ensure => installed,
+    }
+  }
+
+  if ! defined(Package['kpartx']) {
+    package { 'kpartx':
+      ensure => installed,
+    }
+  }
+
+  if ! defined(Package['gdisk']) {
+    package { 'gdisk':
+      ensure => installed,
+    }
+  }
+
   $amitools = '/tmp/ec2-ami-tools.zip'
   exec { 'download-amitools':
     command => "wget -O ${amitools} http://s3.amazonaws.com/ec2-downloads/ec2-ami-tools.zip",
