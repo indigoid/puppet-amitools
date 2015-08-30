@@ -1,0 +1,14 @@
+{
+  "name": "jslee-amitools",
+  "version": "0.1.0",
+  "author": "jslee",
+  "summary": "Deploys EC2 AMI tools",
+  "license": "Apache-2.0",
+  "source": "ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/puppet-amitools",
+  "project_page": "Hell",
+  "issues_url": "Hell",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
