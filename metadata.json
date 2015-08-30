@@ -4,7 +4,7 @@
   "author": "jslee",
   "summary": "Deploys EC2 AMI tools",
   "license": "Apache-2.0",
-  "source": "ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/puppet-amitools",
+  "source": "https://github.com/indigoid/puppet-amitools.git",
   "project_page": "Hell",
   "issues_url": "Hell",
   "dependencies": [
