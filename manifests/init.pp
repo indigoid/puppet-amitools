@@ -16,18 +16,6 @@ class amitools (
     }
   }
 
-  if ! defined(Package['wget']) {
-    package { 'wget':
-      ensure => installed,
-    }
-  }
-
-  if ! defined(Package['kpartx']) {
-    package { 'kpartx':
-      ensure => installed,
-    }
-  }
-
   if ! defined(Package['kpartx']) {
     package { 'kpartx':
       ensure => installed,
